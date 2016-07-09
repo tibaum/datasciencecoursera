@@ -33,7 +33,7 @@ The R-script `run_analysis.R` initially downloads the zip-archive mentioned abov
 4. Labels the columns with a description of what measurement the values belong. This is done by taking the information from the file `features.txt` again and processing the names a bit further (removing minus signs, making them more descriptive, e.g. writing _StandardDeviation_ instead of _std_, and so on).
 5. Calculates for each activity and each subject the average per measurement.
 
-Finally, the script saves the summarised data to a csv-file called `tidy_data.csv`.
+Finally, the script saves the summarised data to a file called `tidy_data.txt`.
 
 ## Variables
 
