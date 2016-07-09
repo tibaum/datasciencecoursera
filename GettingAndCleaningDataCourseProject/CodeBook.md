@@ -35,8 +35,11 @@ The R-script `run_analysis.R` initially downloads the zip-archive mentioned abov
 
 Finally, the script saves the summarised data to a csv-file called `tidy_data.csv`.
 
+## Variables
 
+The summarised data contains the following variables:
 
-
-
-
+* __activity__ The activities for which measurements are recorded. This variable is of class character and its values are _laying_, _sitting_, _standing_, _walking_, _walkingdownstairs_ and _walkingupstairs_.
+* __subject__ An identifier for each of the 30 participants. This variable is of class integer with values between 1 and 30.
+* __measurement__ A variable class character. Its values are a subset of the values in the raw data described in `README.txt` and `features_info.txt` for the raw data. Since the naming of the measurements has been expanded by the script `run_analysis.R` you can read directly if a value ist time or frequency measurement, data from the gyroscope or accelerator and so on.
+* __average__ A numeric variable describing for each activity and subject the mean value of each measurement.
