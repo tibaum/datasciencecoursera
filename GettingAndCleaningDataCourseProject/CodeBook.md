@@ -20,7 +20,7 @@ The unzipped archive results in a folder `UCI HAR Dataset`. The following files 
 
 A description of the raw data and licence information are provided in the files `README.txt` and `features_info.txt` which are also contained in the folder `UCI HAR Dataset`.
 
-## Transformations
+## Study Design
 
 The R-script `run_analysis.R` initially downloads the zip-archive mentioned above, unpacks the files and loads them into R. Then the script processes the raw data in the following way:
 
@@ -42,4 +42,4 @@ The summarised data contains the following variables:
 * __activity__ The activities for which measurements are recorded. This variable is of class character and its values are _laying_, _sitting_, _standing_, _walking_, _walkingdownstairs_ and _walkingupstairs_.
 * __subject__ An identifier for each of the 30 participants. This variable is of class integer with values between 1 and 30.
 * __measurement__ A variable class character. Its values are a subset of the values in the raw data described in `README.txt` and `features_info.txt` for the raw data. Since the naming of the measurements has been expanded by the script `run_analysis.R` you can read directly if a value ist time or frequency measurement, data from the gyroscope or accelerator and so on.
-* __average__ A numeric variable describing for each activity and subject the mean value of each measurement.
+* __average__ A numeric variable describing for each activity and each subject the mean value of each measurement.

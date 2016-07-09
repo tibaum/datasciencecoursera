@@ -19,3 +19,5 @@ The script will then create a directory called `data` in your working directory 
 ```R
 summary <- read.csv("tidy_data.csv")
 ```
+
+The script has dependencies on the packages `lubridate`, `dplyr`, `tidyr` and `magrittr`. If they are not already installed, you need to install them prior to running the script. This can be done with the `install.packages("packagename")`-command.
