@@ -44,7 +44,7 @@ merged_data <- merged_data %>% select(mean_and_std_cols, activity_label:subject)
 
 
 
-#  ========== Step 3: Uses descriptive activity names to name the activities in the data set  ==========
+#  ========== Step 3: Using descriptive activity names ==========
 activity_labels$activity <- activity_labels$activity %>% tolower %>% gsub("_", "", .)
 merged_data <- left_join(merged_data, activity_labels, by = c("activity_label" = "id"))
 names(merged_data)[ncol(merged_data)] <- "activity"
